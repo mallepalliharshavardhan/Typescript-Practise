@@ -25,3 +25,15 @@ id = "Emp-01";
 id = 594;
 id = "Emp-1";
 console.log(id);
+let currentRole = "Admin";
+// functions
+// explict parameters
+function multipy(a, b) {
+    return a * b;
+}
+console.log(multipy(2, 5));
+//default or optional parameters
+const formatUserprofile = (name, role = "student", age) => {
+    return `${name} (${role}, Age:${age})`;
+};
+console.log(formatUserprofile("Harsha"));

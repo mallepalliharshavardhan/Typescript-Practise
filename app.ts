@@ -54,3 +54,22 @@ console.log(student1)
   type Userrole = "Admin" | "developer" | "emp" ;
   
   let currentRole: Userrole = "Admin"
+
+  // functions
+    // explict parameters
+   function multipy(a:number, b:number){
+
+    return a*b;
+}
+console.log(multipy(2,5));
+
+//default or optional parameters
+
+ const formatUserprofile= (name:string , role:string = "student", age?:number) =>{
+ 
+    return `${name} (${role}, Age:${age})`;
+ }
+ console.log(formatUserprofile("Harsha"));
+
+
+ 
