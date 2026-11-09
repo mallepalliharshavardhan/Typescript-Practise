@@ -3,7 +3,7 @@
 
 1.package.json file    --->    npm init -y 
 
-2. install typescript  --->    npm install typescript --sve-dev
+2. install typescript  --->    npm install typescript --save-dev
 
 3. Generate typescripy Config -->   npX tsc --init
 

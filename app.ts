@@ -72,4 +72,12 @@ console.log(multipy(2,5));
  console.log(formatUserprofile("Harsha"));
 
 
- 
+ //function
+
+
+  const getCourseProgress= (LearnerName:string, LessonCount:number)=>{
+    return `${LearnerName} completed ${LessonCount} lessons`
+
+  } 
+
+   console.log(getCourseProgress("Harsha",4));

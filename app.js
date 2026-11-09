@@ -37,3 +37,8 @@ const formatUserprofile = (name, role = "student", age) => {
     return `${name} (${role}, Age:${age})`;
 };
 console.log(formatUserprofile("Harsha"));
+//function
+const getCourseProgress = (LearnerName, LessonCount) => {
+    return `${LearnerName} completed ${LessonCount} lessons`;
+};
+console.log(getCourseProgress("Harsha", 4));
