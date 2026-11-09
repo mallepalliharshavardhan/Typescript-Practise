@@ -3,4 +3,37 @@ function add(a, b) {
     return a + b;
 }
 ;
-console.log(add(1, 7));
+add(1, 7);
+// expilct type annotations
+let studentName = "rahul";
+let age = 12;
+let Enrolled = true;
+// type inference
+let course = "I'm learning Typescript";
+// Arrays and
+let skills = ["Javascript", 100];
+console.log(skills);
+const student1 = {
+    id: 1,
+    name: "Rahul",
+    isPassed: true
+};
+console.log(student1);
+// union types
+let id;
+id = "Emp-01";
+id = 594;
+id = "Emp-1";
+console.log(id);
+let currentRole = "Admin";
+// functions
+// explict parameters
+function multipy(a, b) {
+    return a * b;
+}
+console.log(multipy(2, 5));
+//default or optional parameters
+const formatUserprofile = (name, role = "student", age) => {
+    return `${name} (${role}, Age:${age})`;
+};
+console.log(formatUserprofile("Harsha"));

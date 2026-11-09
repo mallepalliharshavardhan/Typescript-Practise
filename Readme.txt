@@ -14,3 +14,27 @@
 6 if there are no error it will create a JS file 
 
 7. then compile the Js file ---> node app.json
+
+ ## Type Annotators
+  ### Expilict type Annotators
+  ### Inference type Annotators
+
+## Arrays and Objects
+
+
+  for arrays Eg: let marks:number[] =[12,34,23,44,93]; // standard array
+ 
+  Objects: we create clear blue prints
+    type empData ={
+        id:number  ,
+        Name:String,
+        Salary:number,
+        dept:string
+    }
+
+ ## Union types --> Multiple types allows
+  
+   let id :number | string ;
+   
+   ## literal types --> Restricts a variable to the excat values 
+ 
