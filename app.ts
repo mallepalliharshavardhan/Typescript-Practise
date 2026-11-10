@@ -1,83 +1,99 @@
-function add(a:number,b:number){
-    return a+b ;
-};
+// function add(a:number,b:number){
+//     return a+b ;
+// };
 
-add(1,7);
+// add(1,7);
 
-// expilct type annotations
+// // expilct type annotations
 
-let studentName:string = "rahul";
-let age:number = 12;
-let Enrolled:boolean = true;
+// // let studentName:string = "rahul";
+// let age:number = 12;
+// let Enrolled:boolean = true;
 
-// type inference
+// // type inference
 
-let course = "I'm learning Typescript";
+// let course = "I'm learning Typescript";
 
-  // Arrays and
+//   // Arrays and
 
-let skills: [string,number]=["Javascript",100];
+// let skills: [string,number]=["Javascript",100];
 
  
 
-console.log(skills);
+// console.log(skills);
 
-// Objects
+// // Objects
 
-type Student={
-    id:number,
-    name:string,
-    isPassed:boolean,
-    email?:string;
-};
+// type Student={
+//     id:number,
+//     name:string,
+//     isPassed:boolean,
+//     email?:string;
+// };
 
-const student1:Student = {
-    id:1,
-    name:"Rahul",
-    isPassed:true
+// const student1:Student = {
+//     id:1,
+//     name:"Rahul",
+//     isPassed:true
 
-};
+// };
 
-console.log(student1)
+// console.log(student1)
 
-// union types
+// // union types
 
- let id: number | string ;
- id = "Emp-01";
- id = 594;
- id= "Emp-1"
+//  let id: number | string ;
+//  id = "Emp-01";
+//  id = 594;
+//  id= "Emp-1"
 
- console.log(id)
+//  console.log(id)
 
- // literals 
+//  // literals 
 
-  type Userrole = "Admin" | "developer" | "emp" ;
+//   type Userrole = "Admin" | "developer" | "emp" ;
   
-  let currentRole: Userrole = "Admin"
+//   let currentRole: Userrole = "Admin"
 
-  // functions
-    // explict parameters
-   function multipy(a:number, b:number){
+//   // functions
+//     // explict parameters
+//    function multipy(a:number, b:number){
 
-    return a*b;
-}
-console.log(multipy(2,5));
+//     return a*b;
+// }
+// console.log(multipy(2,5));
 
-//default or optional parameters
+// //default or optional parameters
 
- const formatUserprofile= (name:string , role:string = "student", age?:number) =>{
+//  const formatUserprofile= (name:string , role:string = "student", age?:number) =>{
  
-    return `${name} (${role}, Age:${age})`;
- }
- console.log(formatUserprofile("Harsha"));
+//     return `${name} (${role}, Age:${age})`;
+//  }
+//  console.log(formatUserprofile("Harsha"));
 
 
- //function
+//  //function
 
 
-  const getCourseProgress= (LearnerName:string, LessonCount:number)=>{
-    return `${LearnerName} completed ${LessonCount} lessons`
+//   const getCourseProgress= (LearnerName:string, LessonCount:number)=>{
+//     return `${LearnerName} completed ${LessonCount} lessons`
 
-  } 
+//   } 
 
-   console.log(getCourseProgress("Harsha",4));
+//    console.log(getCourseProgress("Harsha",4));
+
+   // Part 1 – Variables and types
+// Create these variables with appropriate TypeScript types:
+// 1. studentName – string
+// 2. studentAge – number
+// 3. isEnrolled – boolean
+// 4. studentId – should accept either a number or a string.
+
+let studentName:string = "Ganju";
+console.log(studentName)
+let studentAge:number = 22;
+console.log(studentAge)
+let isEnrolled:boolean = true;
+console.log(isEnrolled)
+let studentId: number | string = "EMP-01";
+console.log(studentId)
